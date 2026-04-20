@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.card {
+	border: 1px solid #333;
+	padding: 1em;
+	border-radius: 0.5em;
+	box-shadow: 5px 5px 2px #33333386;
+	display: inline-flex;
+	flex-direction: column;
+	gap: 0.5em;
+	width: 20%;
+	margin: 1em;
+}
+
+.card img {
+	width: 100%;
+	height: 40vh;
+	border-radius: 50%;
+}
+
+.card h2 {
+	text-align: center;
+	color: #333;
+	font-size: 1.1em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.card p {
+	text-align: center;
+	color: #333;
+	font-size: 1.3em;
+}
+
+.outta {
+	display: flex;
+	flex-direction: row;
+	gap: 1.5em;
+	margin: 1.5em;
+}
+
+@media screen and (max-width: 746px) {
+	.card {
+		flex-direction: column;
+		width: 100%;
+	}
+	.outta {
+		flex-direction: column;
+	}
+}
